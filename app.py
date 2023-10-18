@@ -60,7 +60,8 @@ def mainpaths():
         messages=[
             {
                 "role": "system",
-                "content": f"You are a remote viewing assistant. Evaluate locations {target1} and {target2} based on the given parameters: topography - {topography}, vegetation - {vegetation}, climate - {climate}, wildlife - {wildlife}. Choose the location that best fits the provided criteria."
+                "content": f"You are a remote viewing assistant. Give which location {target1} and {target2} based on the given parameters: topography - {topography}, vegetation - {vegetation}, climate - {climate}, wildlife - {wildlife}. Choose the location that best fits the provided criteria. When saying the answer, say it like this: The location1 (%percentage) and location2 (%percentage)."
+
             },
             {
                 "role": "user",
