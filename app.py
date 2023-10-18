@@ -78,7 +78,7 @@ def mainpaths():
         db.session.add(request_data)
         db.session.commit()
 
-        # return flask.redirect('/alternative', code=307)
+        return flask.redirect('/alternative', code=307)
     return jsonify({"fulfillmentText": "Please provide attendees and date first."})
 
 
